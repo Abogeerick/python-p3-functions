@@ -7,7 +7,7 @@ def greet(name):
     print(f"Hello, {name}!")  # Updated to correctly print the provided name
 
 def greet_with_default(name="programmer"):
-    print("Hello, programmer!")
+    print(f"Hello, {name}!")
 
 def add(num1, num2):
     return num1 + num2
@@ -20,7 +20,7 @@ def halve(number):
     
 greet_programmer()
 greet("Naureen")  # Change "Guido" to "Naureen"
-greet_with_default("Guido")
+greet_with_default()
 greet_with_default("Sunny")
 sum_result = add(1, 2)
 print(sum_result)
