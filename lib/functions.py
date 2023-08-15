@@ -4,11 +4,10 @@ def greet_programmer():
     print("Hello, programmer!")
 
 def greet(name):
-    print(f"Hello, ${name}")
+    print(f"Hello, {name}!")  # Updated to correctly print the provided name
 
 def greet_with_default(name="programmer"):
     print("Hello, programmer!")
-
 
 def add(num1, num2):
     return num1 + num2
@@ -20,8 +19,8 @@ def halve(number):
         return None
     
 greet_programmer()
-greet("Naureen")
-greet_with_default()
+greet("Naureen")  # Change "Guido" to "Naureen"
+greet_with_default("Guido")
 greet_with_default("Sunny")
 sum_result = add(1, 2)
 print(sum_result)
@@ -29,6 +28,3 @@ halve_result = halve(4)
 print(halve_result)
 halve_invalid_result = halve("two")
 print(halve_invalid_result)
-
-    
-
